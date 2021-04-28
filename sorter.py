@@ -31,5 +31,6 @@ with open("input.txt", encoding="utf-8") as f:
                 output_string = ",".join([ikea_id, item_count, item_name, current_item])                
                 legit_lines.append(output_string)
 
+legit_lines.sort()
 for line in legit_lines:
     print(line)
